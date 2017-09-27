@@ -39,7 +39,6 @@
 ####[400]
 
 <p>
-
 1. [100] Let's do some depletion analysis. Solve the Pu-239 production equation.   
 2. [50] Solve for Pu-240, and the rest of the Pu isotopes in the same way.   
 3. [50] Solve for Pu-241.    
@@ -49,20 +48,17 @@
 
 Compare the plot to [these results](https://piazza.com/class_profile/get_resource/j5trc64dgan3ru/j839j5xx6co562). Don't worry that the graph is B v w; the shape of the curves should be similar. 
 ___
-
-$$\frac{{dN_{49}}{d\theta}=N_{28}^0\sigma_{28}+\kappa_{25} N_{25} \sigma_{25}-\gamma_{49} N_{49} \sigma_{49}+\kappa_{41} N_{41} \sigma_{41}$$
-
-$$N_{49}(0)=0$$  
-
-$$\kappa_m=\eta_m \epsilon P_F (1-p)+\eta_m \frac{\alpha_{28}}{1+\alpha_{28}}\cdot\frac{\epsilon-1}{\eta_{28}-1}$$  
-
-$$\gamma_m=1-\kappa_m$$  
+<img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\frac{dN_{49}}{d\theta}&space;=&space;N_{28}^{0}&space;\sigma_{28}&space;&plus;&space;\kappa_{25}&space;N_{25}&space;\sigma_{25}&space;-&space;\gamma_{49}&space;N_{49}&space;\sigma_{49}" title="\large \frac{dN_{49}}{d\theta} = N_{28}^{0} \sigma_{28} + \kappa_{25} N_{25} \sigma_{25} - \gamma_{49} N_{49} \sigma_{49}" />  
+<img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;N_{49}(0)=0" title="\large N_{49}(0)=0" />  
+<img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\kappa_m=\eta_m&space;\epsilon&space;P_F&space;(1-p)&plus;\eta_m&space;\frac{\alpha_{28}}{1&plus;&space;\alpha_{28}}\cdot\frac{\epsilon-1}{\eta_{28}-1}" title="\large \kappa_m=\eta_m \epsilon P_F (1-p)+\eta_m \frac{\alpha_{28}}{1+ \alpha_{28}}\cdot\frac{\epsilon-1}{\eta_{28}-1}" />  
+<img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\gamma_m=1-\kappa_m" title="\large \gamma_m=1-\kappa_m" />  
 
 Just to get the ball rolling, the solution is as follows:  
+<img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;N_{49}(\theta)=C_1(1-e^{-\sigma_{49}\gamma_{49}\theta})&plus;C_2(e^{-&space;\sigma_{25}\theta}-e^{-\sigma_{49}\gamma_{49}\theta})" title="\large N_{49}(\theta)=C_1(1-e^{-\sigma_{49}\gamma_{49}\theta})+C_2(e^{- \sigma_{25}\theta}-e^{-\sigma_{49}\gamma_{49}\theta})" />  
+<img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;C_1=\frac{N_{28}^0\sigma_{28}}{\sigma_{49}\gamma_{49}},&space;C_2=\frac{\kappa_{25}&space;N_{25}^0&space;\sigma_{25}}{\sigma_{49}\gamma_{49}-&space;\sigma_{25}}" title="\large C_1=\frac{N_{28}^0\sigma_{28}}{\sigma_{49}\gamma_{49}}, C_2=\frac{\kappa_{25} N_{25}^0 \sigma_{25}}{\sigma_{49}\gamma_{49}- \sigma_{25}}" />
+___
 
-$$N_{49}(\theta)=C_1(1-e^{-\sigma_{49}\gamma_{49}\theta})+C_2(e^{-\sigma_{25}\theta}-e^{-\sigma_{49}\gamma_{49}\theta})$$  
 
-$$C_1=\frac{N_{28}^0\sigma_{28}}{\sigma_{49}\gamma_{49}},C_2=\frac{\kappa_{25} N_{25}^0 \sigma_{25}}{\sigma_{49}\gamma_{49}-\sigma_{25}}$$
 
 
 $$\frac{dN_{40}}{d\theta}=\frac{\alpha_{49}}{1+\alpha_{49}}N_{49}\sigma_{49}-N_{40}\sigma_{40}$$  
@@ -93,10 +89,9 @@ ___
 
 ### Data
 
-* initial fuel mass = 99.2 MTU  
-* initial fuel mass = 99.2 MTU  
-* enrichment = 3.2%
- 
+<p>
+- initial fuel mass = 99.2 MTU   
+- enrichment = 3.2%  
 
 </xmp>
 
