@@ -30,13 +30,8 @@
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button>
-<h3><a class="navbar-brand" href="5b-burnup-depletion.html">Project 5b: Burnup and depletion</a></h3>
+<h3><a class="navbar-brand" href="5b-burnup-depletion.html">Chapter 5b: Burnup and depletion</a></h3>
 </div>
-<! ---<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-<ul class="nav navbar-nav navbar-right">
-<h3><li class="active"><a href="5b-burnup-depletion.html">Project 5b: Burnup and depletion<span class="sr-only">(current)</span></a></li></h3>
-</ul>
-</div> -->
 </div>
 </nav>
 
@@ -44,7 +39,7 @@
 <xmp>
 # NE585: Nuclear fuel cycle analysis
 ## Project 5
-### Reactor operation 
+### Burnup and delpletion analysis
 ####[400]
 
 <p>
@@ -66,42 +61,57 @@ Just to get the ball rolling, the solution is as follows:
 <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;N_{49}(\theta)=C_1(1-e^{-\sigma_{49}\gamma_{49}\theta})&plus;C_2(e^{-&space;\sigma_{25}\theta}-e^{-\sigma_{49}\gamma_{49}\theta})" title="\large N_{49}(\theta)=C_1(1-e^{-\sigma_{49}\gamma_{49}\theta})+C_2(e^{- \sigma_{25}\theta}-e^{-\sigma_{49}\gamma_{49}\theta})" />  
 <img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;C_1=\frac{N_{28}^0\sigma_{28}}{\sigma_{49}\gamma_{49}},&space;C_2=\frac{\kappa_{25}&space;N_{25}^0&space;\sigma_{25}}{\sigma_{49}\gamma_{49}-&space;\sigma_{25}}" title="\large C_1=\frac{N_{28}^0\sigma_{28}}{\sigma_{49}\gamma_{49}}, C_2=\frac{\kappa_{25} N_{25}^0 \sigma_{25}}{\sigma_{49}\gamma_{49}- \sigma_{25}}" />
 ___
-
-
-
-
-$$\frac{dN_{40}}{d\theta}=\frac{\alpha_{49}}{1+\alpha_{49}}N_{49}\sigma_{49}-N_{40}\sigma_{40}$$  
-
-
-$$\frac{dN_{41}}{d\theta}=N_{40}\sigma_{40}-N_{41}\sigma_{41}$$  
-
-
-$$\frac{dN_{42}}{d\theta}=\frac{\alpha_{41}}{1+\alpha_{41}}N_{41}\sigma{41}-N_{42}\sigma_{42}$$  
-
-For 2-4: $$N_m(0)=0$$
-
-
-$$\frac{dN_{25}^F}{d\theta}=\frac{1}{1+\alpha_{25}}N_{25}\sigma_{25}$$  
-
-$$\frac{dN_{49}^F}{d\theta}=\frac{1}{1+\alpha_{49}}N_{49}\sigma_{49}$$  
-
-$$\frac{dN_{41}^F}{d\theta}=\frac{1}{1+\alpha_{41}}N_{41}\sigma_{41}$$  
-
-$$N^F_m(0)=0$$
-
-
-$$B=9.5E5\cdot w$$  
-
-$$w=\frac{235N^F_{25}+238N^F_{28}+239N^F_{49}+241N^F_{41}}{235N^0_{25}+238N^0_{28}}$$
-
+<img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\frac{dN_{40}}{d\theta}=\frac{\alpha_{49}}{1&plus;&space;\alpha_{49}}N_{49}\sigma_{49}-N_{40}\sigma_{40}" title="\large \frac{dN_{40}}{d\theta}=\frac{\alpha_{49}}{1+ \alpha_{49}}N_{49}\sigma_{49}-N_{40}\sigma_{40}" />  
+<img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\frac{dN_{41}}{d\theta}=N_{40}\sigma_{40}-N_{41}\sigma_{41}" title="\large \frac{dN_{41}}{d\theta}=N_{40}\sigma_{40}-N_{41}\sigma_{41}" />  
+<img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\frac{dN_{42}}{d\theta}=\frac{\alpha_{41}}{1&plus;&space;\alpha_{41}}N_{41}\sigma{41}-N_{42}\sigma_{42}" title="\large \frac{dN_{42}}{d\theta}=\frac{\alpha_{41}}{1+ \alpha_{41}}N_{41}\sigma{41}-N_{42}\sigma_{42}" />  
+<img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;N_m(0)=0" title="\large N_m(0)=0" />
 ___
+<img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\frac{dN_{25}^F}{d\theta}=\frac{1}{1&plus;\alpha_{25}}N_{25}\sigma_{25}" title="\large \frac{dN_{25}^F}{d\theta}=\frac{1}{1+\alpha_{25}}N_{25}\sigma_{25}" />  
+<img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\frac{dN_{49}^F}{d\theta}=\frac{1}{1&plus;\alpha_{49}}N_{49}\sigma_{49}" title="\large \frac{dN_{49}^F}{d\theta}=\frac{1}{1+\alpha_{49}}N_{49}\sigma_{49}" />  
+<img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\frac{dN_{41}^F}{d\theta}=\frac{1}{1&plus;\alpha_{41}}N_{41}\sigma_{41}" title="\large \frac{dN_{41}^F}{d\theta}=\frac{1}{1+\alpha_{41}}N_{41}\sigma_{41}" />  
+<img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;N^F_m(0)=0" title="\large N^F_m(0)=0" />  
+___
+<img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;B=9.5E5\cdot&space;w" title="\large B=9.5E5\cdot w" />
 
+<img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;w=\frac{235N^F_{25}&plus;238N^F_{28}&plus;239N^F_{49}&plus;241N^F_{41}}{235N^0_{25}&plus;&space;238N^0_{28}}" title="\large w=\frac{235N^F_{25}+238N^F_{28}+239N^F_{49}+241N^F_{41}}{235N^0_{25}+ 238N^0_{28}}" />
+___
 ### Data
 
 <p>
 - initial fuel mass = 99.2 MTU   
 - enrichment = 3.2%  
-
+- $\overline{\phi}=3.5E13 \frac{n}{cm^2 \cdot s}$  
+- $\epsilon = 1.0476$  
+- $P_{F} = 0.9889$  
+- $p = .07725$  
+<p>
+- $\sigma_{25} = 555.6b$    
+<p>
+- $\sigma_{28} = 2.23b$    
+<p>
+- $\sigma_{49} = 1618.2b$    
+<p>
+- $\sigma_{40} = 2616.8b$    
+<p>
+- $\sigma_{41} = 1567.3b$    
+<p>
+- $\sigma_{42} = 381b$    
+<p>
+- $\eta_{25} = 1.96$    
+<p>
+- $\eta_{28} = 2.3432$    
+<p>
+- $\eta_{49} = 1.86$  
+<p>
+- $\eta_{41} = 3.06$  
+<p>
+- $\alpha_{25} = 0.2398$  
+<p>
+- $\alpha_{28} = 0.1907$  
+<p>
+- $\alpha_{49} = 0.5430$  
+<p>
+- $\alpha_{41} = 0.3765$  
 </xmp>
 
 <script type="text/javascript" src="../../../strapdown.min.js?theme=readable"></script>
