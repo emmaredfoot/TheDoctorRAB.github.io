@@ -40,7 +40,17 @@
 
 <p>
 
-1. [100] Let's do some depletion analysis. Solve the Pu-239 production equation. $\frac{{dN_{49}}{d\theta}=N_{28}^0\sigma_{28}+\kappa_{25} N_{25} \sigma_{25}-\gamma_{49} N_{49} \sigma_{49}+\kappa_{41} N_{41} \sigma_{41}$
+1. [100] Let's do some depletion analysis. Solve the Pu-239 production equation.   
+2. [50] Solve for Pu-240, and the rest of the Pu isotopes in the same way.   
+3. [50] Solve for Pu-241.    
+4. [50] Solve for Pu-242.   
+5. [75] Solve for fission product production for U-235,Pu-239,Pu-241.   
+6. [75] Plot *(N v B)* for U-235, U-238, the Pu isotopes, and the fission products as a function of burnup (all together).   
+
+Compare the plot to [these results](https://piazza.com/class_profile/get_resource/j5trc64dgan3ru/j839j5xx6co562). Don't worry that the graph is B v w; the shape of the curves should be similar. 
+___
+
+$$\frac{{dN_{49}}{d\theta}=N_{28}^0\sigma_{28}+\kappa_{25} N_{25} \sigma_{25}-\gamma_{49} N_{49} \sigma_{49}+\kappa_{41} N_{41} \sigma_{41}$$
 
 $$N_{49}(0)=0$$  
 
@@ -54,21 +64,17 @@ $$N_{49}(\theta)=C_1(1-e^{-\sigma_{49}\gamma_{49}\theta})+C_2(e^{-\sigma_{25}\th
 
 $$C_1=\frac{N_{28}^0\sigma_{28}}{\sigma_{49}\gamma_{49}},C_2=\frac{\kappa_{25} N_{25}^0 \sigma_{25}}{\sigma_{49}\gamma_{49}-\sigma_{25}}$$
 
-2. [50] Solve for Pu-240, and the rest of the Pu isotopes in the same way. 
 
 $$\frac{dN_{40}}{d\theta}=\frac{\alpha_{49}}{1+\alpha_{49}}N_{49}\sigma_{49}-N_{40}\sigma_{40}$$  
 
-3. [50] Solve for Pu-241.  
 
 $$\frac{dN_{41}}{d\theta}=N_{40}\sigma_{40}-N_{41}\sigma_{41}$$  
 
-4. [50] Solve for Pu-242.  
 
 $$\frac{dN_{42}}{d\theta}=\frac{\alpha_{41}}{1+\alpha_{41}}N_{41}\sigma{41}-N_{42}\sigma_{42}$$  
 
 For 2-4: $$N_m(0)=0$$
 
-5. [75] Solve for fission product production for U-235,Pu-239,Pu-241.  
 
 $$\frac{dN_{25}^F}{d\theta}=\frac{1}{1+\alpha_{25}}N_{25}\sigma_{25}$$  
 
@@ -78,20 +84,19 @@ $$\frac{dN_{41}^F}{d\theta}=\frac{1}{1+\alpha_{41}}N_{41}\sigma_{41}$$
 
 $$N^F_m(0)=0$$
 
-6. [75] Plot **(N v B)** for U-235, U-238, the Pu isotopes, and the fission products as a function of burnup (all together).   
 
 $$B=9.5E5\cdot w$$  
 
 $$w=\frac{235N^F_{25}+238N^F_{28}+239N^F_{49}+241N^F_{41}}{235N^0_{25}+238N^0_{28}}$$
 
-Compare the plot to [these results](https://piazza.com/class_profile/get_resource/j5trc64dgan3ru/j839j5xx6co562). Don't worry that the graph is B v w; the shape of the curves should be similar. 
 ___
 
-#### Data
+### Data
 
-- initial fuel mass = 99.2 MTU  
+* initial fuel mass = 99.2 MTU  
+* initial fuel mass = 99.2 MTU  
 * enrichment = 3.2%
-* 
+ 
 
 </xmp>
 
