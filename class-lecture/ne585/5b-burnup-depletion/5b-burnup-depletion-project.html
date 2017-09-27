@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Project 5: Reactor operation</title>
+<title>Project 5: Burnup and depletion</title>
 <style> p {font-size: 24px } </style>
 <script type="text/javascript" async 
 src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
@@ -40,7 +40,23 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-
 
 <p>
 
-1. [000] 
+We're going to do some plutonium depletion analysis. 
+
+1. [200] Solve the Pu-239 production equation: 
+
+<img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\frac{dN_{49}}{d\theta}=N_{28}^0&plus;\kappa_{25}N_{25}\sigma_{25}-\gamma_{49}N_{49}\sigma_{49}" title="\large \frac{dN_{49}}{d\theta}=N_{28}^0+\kappa_{25}N_{25}\sigma_{25}-\gamma_{49}N_{49}\sigma_{49}" />  
+<img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;N_{49}(0)=0" title="\large N_{49}(0)=0" />
+
+$\kappa_m = \eta_m\episilon P_F (1-p)+\eta_m \frac{\alpha_{28}}{1+\alpha_{28} \cdot \frac{\epsilon - 1}{\eta_{28 - 1}$  
+$\gamma_m = 1-\kappa_m$
+
+Just to get the ball rolling, the solution is as follows:
+
+$$N_{49}(\theta)=C_1(1-e^{-\sigma_{49}\gamma_{49}\theta})+C_2(e^{-\sigma_{25}\theta}-e^{-\sigma_{49}\gamma_{49}\theta})$$
+
+$$C_1=\frac{N_{28}^0\sigma_{28}}{\sigma_{49}\gamma_{49}},C_2=\frac{\kappa_{25} N_{25}^0 \sigma_{25}}{\sigma_{49}\gamma_{49}-\sigma_{25}}$$
+
+
 
 </xmp>
 
